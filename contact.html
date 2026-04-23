@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Cithambara Diya</title>
+  <meta name="description" content="Contact Cithambara Diya for artwork placement and rotation enquiries." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="brand" href="index.html" aria-label="Cithambara Diya home">
+        <span class="brand__title">Cithambara Diya</span>
+        <span class="brand__tag">Sri Lankan art in lived spaces</span>
+      </a>
+      <button class="navToggle" type="button" aria-expanded="false" aria-controls="siteNav">
+        <span class="navToggle__line"></span>
+        <span class="navToggle__line"></span>
+        <span class="navToggle__line"></span>
+        <span class="srOnly">Menu</span>
+      </button>
+      <nav id="siteNav" class="nav">
+        <a class="nav__link" href="index.html">Home</a>
+        <a class="nav__link" href="about.html">About</a>
+        <a class="nav__link" href="corporate-spaces.html">Corporate Spaces</a>
+        <a class="nav__link" href="artists.html">Artists</a>
+        <a class="nav__link" href="artworks.html">Artworks</a>
+        <a class="nav__link" href="how-it-works.html">How It Works</a>
+        <a class="nav__link" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="split">
+      <div>
+        <h1 class="sectionTitle" style="text-align:left; margin-bottom: 16px;">Get in touch</h1>
+        <p>To request a portfolio, enquire about artwork placement, or discuss options for your office or private space, contact Cithambara Diya.</p>
+        <p><strong>Current service area:</strong> Colombo<br><strong>Focus:</strong> Original Sri Lankan artworks for offices and selected interiors</p>
+        <p class="note">The form is set to submit to <strong>contact@cithambaradiya.com</strong>. Change that email if you want submissions to go elsewhere.</p>
+      </div>
+      <div>
+        <form class="form" action="https://formsubmit.co/contact@cithambaradiya.com" method="POST">
+          <div class="formRow--two">
+            <div class="field">
+              <label for="firstName">First Name <span class="req">(required)</span></label>
+              <input id="firstName" name="firstName" type="text" required>
+            </div>
+            <div class="field">
+              <label for="lastName">Last Name <span class="req">(required)</span></label>
+              <input id="lastName" name="lastName" type="text" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="email">Email <span class="req">(required)</span></label>
+            <input id="email" name="email" type="email" required>
+          </div>
+          <div class="field">
+            <label for="company">Company</label>
+            <input id="company" name="company" type="text">
+          </div>
+          <div class="field">
+            <label for="whatsapp">WhatsApp Number</label>
+            <input id="whatsapp" name="whatsapp" type="tel">
+          </div>
+          <div class="field">
+            <label for="spaceType">Type of space</label>
+            <select id="spaceType" name="spaceType">
+              <option>Corporate space</option>
+              <option>Private interior</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="style">Preferred artwork style</label>
+            <input id="style" name="style" type="text">
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message"></textarea>
+          </div>
+          <input type="hidden" name="_subject" value="New Cithambara Diya enquiry">
+          <input type="hidden" name="_next" value="thank-you.html">
+          <button class="btn" type="submit">Send enquiry</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
