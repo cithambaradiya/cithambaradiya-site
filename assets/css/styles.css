@@ -443,3 +443,49 @@ a:hover {
     grid-template-columns: 1fr;
   }
 }
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+}
+
+.brand__logo {
+  width: 58px;
+  height: auto;
+  display: block;
+  flex-shrink: 0;
+}
+
+.brand__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.brand__title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2rem;
+  line-height: 1;
+  color: var(--text);
+}
+
+.brand__tag {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 920px) {
+  .brand__logo {
+    width: 46px;
+  }
+
+  .brand__title {
+    font-size: 1.5rem;
+  }
+
+  .brand__tag {
+    font-size: 0.78rem;
+  }
+}
