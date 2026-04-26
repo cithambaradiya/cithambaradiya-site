@@ -298,6 +298,13 @@ a:hover {
   overflow: hidden;
 }
 
+.featureImage {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
 .placeholderArt {
   min-height: 220px;
   display: grid;
@@ -471,10 +478,5 @@ a:hover {
   }
 }
 
-.featureImage {
-  width: 100%;
-  height: 320px;
-  object-fit: cover;
-  display: block;
-}
+
 
