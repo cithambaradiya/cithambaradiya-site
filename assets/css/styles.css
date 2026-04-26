@@ -305,6 +305,13 @@ a:hover {
   display: block;
 }
 
+.featureImageSmall {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
 .placeholderArt {
   min-height: 220px;
   display: grid;
