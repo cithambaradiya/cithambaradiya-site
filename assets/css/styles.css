@@ -353,6 +353,37 @@ a:hover {
   font-size: 1.9rem;
 }
 
+.artworkGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 16px;
+}
+
+.artworkCard {
+  margin: 0;
+}
+
+.artworkImage {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.artworkCard figcaption {
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+@media (max-width: 920px) {
+  .artworkGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .badges {
   display: flex;
   flex-wrap: wrap;
