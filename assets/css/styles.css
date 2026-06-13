@@ -264,6 +264,18 @@ a:hover {
   font-size: 1.04rem;
 }
 
+.artworkQuote {
+  margin: 24px 0 10px;
+  padding: 20px 22px;
+  border-left: 4px solid var(--accent);
+  background: var(--surface-strong);
+  color: var(--text);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.35rem;
+  line-height: 1.55;
+  border-radius: 0 12px 12px 0;
+}
+
 .prose p {
   margin: 0 0 18px;
 }
